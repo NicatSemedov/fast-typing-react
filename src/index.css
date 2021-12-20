@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  transition: all;
+  user-select: none;
+}
+
+.Title {
+  color: blueviolet;
+}
+
+.words :nth-child(1) {
+  margin-right: 0.4rem;
+}
+
+.active {
+  display: inline-block;
+  background-color: white;
+  color: rgb(62, 2, 119);
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.true {
+  display: inline-block;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.wrong {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.words {
+  color: blueviolet;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  overflow: hidden;
+  text-align: center;
+  width: 80%;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid blueviolet;
+}
+
+.time-over {
+  color: red;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid blueviolet;
+  width: 80%;
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.replay {
+  padding: 0.5rem;
+  width: 40vh;
+  border-radius: 10px;
+  font-size: 3.5rem;
+  color: blueviolet;
+  margin-top: 2rem;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid blueviolet;
+}
+
+.replay:hover {
+  background-color: rgb(62, 2, 119);
+}
+
+.stat, .end-stat {
+  text-align: center;
+}
+.stat :nth-child(1){
+  animation: bounce 1s infinite;
+
+  color: blueviolet;
+  font-size: 2rem;
+}
+.end-stat :nth-child(1){
+  color: blueviolet;
+  font-size: 2rem;
+}
+.stat :nth-child(2){
+  color: red;
+  font-size: 2rem;
+}
+.end-stat :nth-child(2){
+  color: red;
+  font-size: 2rem;
+}
+
+.stat .time{
+  color: blueviolet;
+  font-size: 3rem;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.body input {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  padding-left: 0.8rem;
+  outline: none;
+  width: 50%;
+  color: blueviolet;
+  font-weight: bold;
+  border-radius: 10px 0 0 10px;
+  border: 2px solid blueviolet;
+  border-right: none;
+  caret-color: blueviolet;
+  background-color: transparent;
+}
+
+.body input::placeholder {
+  color: rgb(93, 73, 112);
+}
+
+.body button {
+  font-size: 14px;
+  color: blueviolet;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid blueviolet;
+  cursor: pointer;
+}
+
+.body button:nth-child(3) {
+  border-radius: 0 10px 10px 0;
+  border-left: none;
+}
+
+.body button:hover {
+  color: white;
+  background-color: blueviolet;
+}
+
+.footer {
+  margin-top: auto;
+  font-size: large;
+  color: blueviolet;
+}
